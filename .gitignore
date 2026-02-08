@@ -1,0 +1,29 @@
+# ===== DATA / CACHE (ABSOLUTELY IGNORE) =====
+archive/
+cache/
+pulsedb_subset/cache/
+pulsedb_subset/archive/
+
+# ===== PYTHON =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# ===== LARGE GENERATED FILES =====
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== TEMP =====
+*.log
+*.tmp
