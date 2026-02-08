@@ -1,0 +1,592 @@
+{
+  "Train": {
+    "subset_name": "Train",
+    "mat_path": "C:\\Users\\LENOVO\\Documents\\PYTHON\\BRT\\PulseDB\\archive\\VitalDB_Train_Subset.mat",
+    "is_hdf5": true,
+    "dataset_map": {
+      "sbp": "/Subset/SBP",
+      "dbp": "/Subset/DBP",
+      "age": "/Subset/Age",
+      "gender": "/Subset/Gender",
+      "height": "/Subset/Height",
+      "weight": "/Subset/Weight",
+      "bmi": "/Subset/BMI",
+      "subject_id": "/Subset/Subject",
+      "signals": "/Subset/Signals"
+    },
+    "nodes": [
+      {
+        "path": "/#refs#",
+        "kind": "group",
+        "shape": null,
+        "dtype": null
+      },
+      {
+        "path": "/Subset",
+        "kind": "group",
+        "shape": null,
+        "dtype": null
+      },
+      {
+        "path": "/Subset",
+        "kind": "group",
+        "shape": null,
+        "dtype": null
+      },
+      {
+        "path": "/Subset/Age",
+        "kind": "dataset",
+        "shape": [
+          1,
+          465480
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/BMI",
+        "kind": "dataset",
+        "shape": [
+          1,
+          465480
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/DBP",
+        "kind": "dataset",
+        "shape": [
+          1,
+          465480
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/Gender",
+        "kind": "dataset",
+        "shape": [
+          1,
+          465480
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "/Subset/Height",
+        "kind": "dataset",
+        "shape": [
+          1,
+          465480
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/SBP",
+        "kind": "dataset",
+        "shape": [
+          1,
+          465480
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/Signals",
+        "kind": "dataset",
+        "shape": [
+          1250,
+          3,
+          465480
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/Subject",
+        "kind": "dataset",
+        "shape": [
+          1,
+          465480
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "/Subset/Weight",
+        "kind": "dataset",
+        "shape": [
+          1,
+          465480
+        ],
+        "dtype": "float64"
+      }
+    ]
+  },
+  "CalBased_Test": {
+    "subset_name": "CalBased_Test",
+    "mat_path": "C:\\Users\\LENOVO\\Documents\\PYTHON\\BRT\\PulseDB\\archive\\VitalDB_CalBased_Test_Subset.mat",
+    "is_hdf5": true,
+    "dataset_map": {
+      "sbp": "/Subset/SBP",
+      "dbp": "/Subset/DBP",
+      "age": "/Subset/Age",
+      "gender": "/Subset/Gender",
+      "height": "/Subset/Height",
+      "weight": "/Subset/Weight",
+      "bmi": "/Subset/BMI",
+      "subject_id": "/Subset/Subject",
+      "signals": "/Subset/Signals"
+    },
+    "nodes": [
+      {
+        "path": "/#refs#",
+        "kind": "group",
+        "shape": null,
+        "dtype": null
+      },
+      {
+        "path": "/Subset",
+        "kind": "group",
+        "shape": null,
+        "dtype": null
+      },
+      {
+        "path": "/Subset",
+        "kind": "group",
+        "shape": null,
+        "dtype": null
+      },
+      {
+        "path": "/Subset/Age",
+        "kind": "dataset",
+        "shape": [
+          1,
+          51720
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/BMI",
+        "kind": "dataset",
+        "shape": [
+          1,
+          51720
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/DBP",
+        "kind": "dataset",
+        "shape": [
+          1,
+          51720
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/Gender",
+        "kind": "dataset",
+        "shape": [
+          1,
+          51720
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "/Subset/Height",
+        "kind": "dataset",
+        "shape": [
+          1,
+          51720
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/SBP",
+        "kind": "dataset",
+        "shape": [
+          1,
+          51720
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/Signals",
+        "kind": "dataset",
+        "shape": [
+          1250,
+          3,
+          51720
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/Subject",
+        "kind": "dataset",
+        "shape": [
+          1,
+          51720
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "/Subset/Weight",
+        "kind": "dataset",
+        "shape": [
+          1,
+          51720
+        ],
+        "dtype": "float64"
+      }
+    ]
+  },
+  "CalFree_Test": {
+    "subset_name": "CalFree_Test",
+    "mat_path": "C:\\Users\\LENOVO\\Documents\\PYTHON\\BRT\\PulseDB\\archive\\VitalDB_CalFree_Test_Subset.mat",
+    "is_hdf5": true,
+    "dataset_map": {
+      "sbp": "/Subset/SBP",
+      "dbp": "/Subset/DBP",
+      "age": "/Subset/Age",
+      "gender": "/Subset/Gender",
+      "height": "/Subset/Height",
+      "weight": "/Subset/Weight",
+      "bmi": "/Subset/BMI",
+      "subject_id": "/Subset/Subject",
+      "signals": "/Subset/Signals"
+    },
+    "nodes": [
+      {
+        "path": "/#refs#",
+        "kind": "group",
+        "shape": null,
+        "dtype": null
+      },
+      {
+        "path": "/Subset",
+        "kind": "group",
+        "shape": null,
+        "dtype": null
+      },
+      {
+        "path": "/Subset",
+        "kind": "group",
+        "shape": null,
+        "dtype": null
+      },
+      {
+        "path": "/Subset/Age",
+        "kind": "dataset",
+        "shape": [
+          1,
+          57600
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/BMI",
+        "kind": "dataset",
+        "shape": [
+          1,
+          57600
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/DBP",
+        "kind": "dataset",
+        "shape": [
+          1,
+          57600
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/Gender",
+        "kind": "dataset",
+        "shape": [
+          1,
+          57600
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "/Subset/Height",
+        "kind": "dataset",
+        "shape": [
+          1,
+          57600
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/SBP",
+        "kind": "dataset",
+        "shape": [
+          1,
+          57600
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/Signals",
+        "kind": "dataset",
+        "shape": [
+          1250,
+          3,
+          57600
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/Subject",
+        "kind": "dataset",
+        "shape": [
+          1,
+          57600
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "/Subset/Weight",
+        "kind": "dataset",
+        "shape": [
+          1,
+          57600
+        ],
+        "dtype": "float64"
+      }
+    ]
+  },
+  "AAMI_Test": {
+    "subset_name": "AAMI_Test",
+    "mat_path": "C:\\Users\\LENOVO\\Documents\\PYTHON\\BRT\\PulseDB\\archive\\VitalDB_AAMI_Test_Subset.mat",
+    "is_hdf5": true,
+    "dataset_map": {
+      "sbp": "/Subset/SBP",
+      "dbp": "/Subset/DBP",
+      "age": "/Subset/Age",
+      "gender": "/Subset/Gender",
+      "height": "/Subset/Height",
+      "weight": "/Subset/Weight",
+      "bmi": "/Subset/BMI",
+      "subject_id": "/Subset/Subject",
+      "signals": "/Subset/Signals"
+    },
+    "nodes": [
+      {
+        "path": "/#refs#",
+        "kind": "group",
+        "shape": null,
+        "dtype": null
+      },
+      {
+        "path": "/Subset",
+        "kind": "group",
+        "shape": null,
+        "dtype": null
+      },
+      {
+        "path": "/Subset",
+        "kind": "group",
+        "shape": null,
+        "dtype": null
+      },
+      {
+        "path": "/Subset/Age",
+        "kind": "dataset",
+        "shape": [
+          1,
+          666
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/BMI",
+        "kind": "dataset",
+        "shape": [
+          1,
+          666
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/DBP",
+        "kind": "dataset",
+        "shape": [
+          1,
+          666
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/Gender",
+        "kind": "dataset",
+        "shape": [
+          1,
+          666
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "/Subset/Height",
+        "kind": "dataset",
+        "shape": [
+          1,
+          666
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/SBP",
+        "kind": "dataset",
+        "shape": [
+          1,
+          666
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/Signals",
+        "kind": "dataset",
+        "shape": [
+          1250,
+          3,
+          666
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/Subject",
+        "kind": "dataset",
+        "shape": [
+          1,
+          666
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "/Subset/Weight",
+        "kind": "dataset",
+        "shape": [
+          1,
+          666
+        ],
+        "dtype": "float64"
+      }
+    ]
+  },
+  "AAMI_Cal": {
+    "subset_name": "AAMI_Cal",
+    "mat_path": "C:\\Users\\LENOVO\\Documents\\PYTHON\\BRT\\PulseDB\\archive\\VitalDB_AAMI_Cal_Subset.mat",
+    "is_hdf5": true,
+    "dataset_map": {
+      "sbp": "/Subset/SBP",
+      "dbp": "/Subset/DBP",
+      "age": "/Subset/Age",
+      "gender": "/Subset/Gender",
+      "height": "/Subset/Height",
+      "weight": "/Subset/Weight",
+      "bmi": "/Subset/BMI",
+      "subject_id": "/Subset/Subject",
+      "signals": "/Subset/Signals"
+    },
+    "nodes": [
+      {
+        "path": "/#refs#",
+        "kind": "group",
+        "shape": null,
+        "dtype": null
+      },
+      {
+        "path": "/Subset",
+        "kind": "group",
+        "shape": null,
+        "dtype": null
+      },
+      {
+        "path": "/Subset",
+        "kind": "group",
+        "shape": null,
+        "dtype": null
+      },
+      {
+        "path": "/Subset/Age",
+        "kind": "dataset",
+        "shape": [
+          1,
+          70212
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/BMI",
+        "kind": "dataset",
+        "shape": [
+          1,
+          70212
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/DBP",
+        "kind": "dataset",
+        "shape": [
+          1,
+          70212
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/Gender",
+        "kind": "dataset",
+        "shape": [
+          1,
+          70212
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "/Subset/Height",
+        "kind": "dataset",
+        "shape": [
+          1,
+          70212
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/SBP",
+        "kind": "dataset",
+        "shape": [
+          1,
+          70212
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/Signals",
+        "kind": "dataset",
+        "shape": [
+          1250,
+          3,
+          70212
+        ],
+        "dtype": "float64"
+      },
+      {
+        "path": "/Subset/Subject",
+        "kind": "dataset",
+        "shape": [
+          1,
+          70212
+        ],
+        "dtype": "object"
+      },
+      {
+        "path": "/Subset/Weight",
+        "kind": "dataset",
+        "shape": [
+          1,
+          70212
+        ],
+        "dtype": "float64"
+      }
+    ]
+  }
+}

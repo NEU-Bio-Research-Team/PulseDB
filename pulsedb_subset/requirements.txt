@@ -1,0 +1,13 @@
+numpy>=1.23
+pandas>=1.5
+PyYAML>=6.0
+scipy>=1.9
+h5py>=3.8
+mat73>=0.65
+tqdm>=4.66
+matplotlib>=3.6
+seaborn>=0.12
+pyarrow>=12
+
+# Optional / legacy (not needed if you already have subset .mat locally)
+gdown>=5.0

@@ -1,0 +1,73 @@
+# PulseDB subset pipeline config.
+#
+# This pipeline assumes you already have the official subset .mat files locally
+# (MAT v7.3/HDF5 is supported) and focuses on:
+# - Scan schema/metadata without loading waveforms
+# - EDA labels + demographics (proxy level)
+# - EDA waveform QC on a controlled sample
+# - Preprocess + cache shards for train-friendly streaming
+
+# Where the subset MAT files live (path is relative to pulsedb_subset/)
+subset_mat_dir: ../archive
+
+# Map logical subset names to filenames
+subset_files:
+  Train: VitalDB_Train_Subset.mat
+  CalBased_Test: VitalDB_CalBased_Test_Subset.mat
+  CalFree_Test: VitalDB_CalFree_Test_Subset.mat
+  AAMI_Test: VitalDB_AAMI_Test_Subset.mat
+  AAMI_Cal: VitalDB_AAMI_Cal_Subset.mat
+
+# Output directories (relative to pulsedb_subset/)
+artifacts_dir: artifacts
+reports_dir: reports
+cache_dir: cache/pulsedb_subset
+
+# Segment settings (used for sanity checks and plots; not all .mat store fs)
+fs: 125
+segment_sec: 10
+
+# Model inputs
+channels: [PPG]
+
+# IMPORTANT: raw Signals has multiple channels (typically ECG/PPG/ABP).
+# To avoid training on the wrong modality, we require an explicit mapping.
+# Based on debug plots: channel 0 = ECG, channel 1 = PPG, channel 2 = ABP.
+channel_indices:
+  PPG: 1
+
+# Sampling (EDA waveform QC)
+eda:
+  qc_sample_per_subset: 20000
+  random_seed: 42
+  sbp_bins: [0, 90, 120, 140, 1000]
+
+# Subject-disjoint split (GLOBAL by subject_id across all subsets)
+splits:
+  seed: 42
+  train_frac: 0.8
+  val_frac: 0.1
+
+# Preprocess / caching
+io:
+  chunk_size: 4096       # how many segments to read per chunk
+  shard_size: 8192       # how many segments to write per shard
+  np_dtype: float32
+
+# Quality control thresholds
+qc:
+  max_nan_ratio: 0.05
+  max_flatline_ratio: 0.20
+  max_saturation_ratio: 0.20
+  label_sbp_range: [60, 240]
+  label_dbp_range: [30, 150]
+  abp_label_max_abs_diff: 30
+
+# Scaling/normalization
+scaling:
+  fit_subset: Train
+  waveform: zscore        # zscore (streaming) only
+  demographics: zscore
+  demographics_features: [age, height, weight, bmi]
+  gender_feature: gender
+  add_missing_indicators: true

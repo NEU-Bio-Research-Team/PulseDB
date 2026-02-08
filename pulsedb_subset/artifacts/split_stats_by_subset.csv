@@ -1,0 +1,16 @@
+subset_name,split,n_segments,n_subjects
+Train,train,375840,1044
+Train,val,46080,128
+Train,test,43560,121
+CalBased_Test,train,41760,1044
+CalBased_Test,val,5120,128
+CalBased_Test,test,4840,121
+CalFree_Test,train,43200,108
+CalFree_Test,val,6000,15
+CalFree_Test,test,8400,21
+AAMI_Test,train,515,90
+AAMI_Test,val,73,12
+AAMI_Test,test,78,14
+AAMI_Cal,train,56422,90
+AAMI_Cal,val,6866,12
+AAMI_Cal,test,6924,14

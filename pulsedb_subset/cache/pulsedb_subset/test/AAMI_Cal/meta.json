@@ -1,0 +1,24 @@
+{
+  "subset_name": "AAMI_Cal",
+  "split": "test",
+  "fs": 125,
+  "segment_sec": 10,
+  "channels_requested": [
+    "PPG"
+  ],
+  "channel_indices": {
+    "PPG": 1
+  },
+  "demo_features": [
+    "age",
+    "height",
+    "weight",
+    "bmi",
+    "gender",
+    "missing_age",
+    "missing_height",
+    "missing_weight",
+    "missing_bmi",
+    "missing_gender"
+  ]
+}
