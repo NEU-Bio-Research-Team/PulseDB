@@ -35,6 +35,7 @@ pip install -r pulsedb_subset/requirements.txt
 
 ```bash
 python pulsedb_subset/scripts/01_inventory_schema.py
+python pulsedb_subset/scripts/02_make_subject_splits.py
 python pulsedb_subset/scripts/02_eda_labels_demographics.py
 python pulsedb_subset/scripts/03_eda_waveform_qc.py
 python pulsedb_subset/scripts/04_preprocess_cache_shards.py
